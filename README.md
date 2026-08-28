@@ -15,8 +15,8 @@ A full analytics pipeline project . Python , SQL , power BI used . Project condu
 
 # Pipeline :
   1. Stage 1 : raw charts.csv ( 3.5GB , 26 million rows )
-1.1 pandas : chunked read . filtered to 2017 , 2018
-1.2 extract TRACK_ID from Spotify URL
+    1.  pandas : chunked read . filtered to 2017 , 2018
+    2.  extract TRACK_ID from Spotify URL
   2. Stage 2 : Analysis in SQL
 2.1 staging table -> normalized into star schema 
 2.2 conducting analysis 
