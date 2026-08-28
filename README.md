@@ -31,7 +31,7 @@ A full analytics pipeline project . Python , SQL , power BI used . Project condu
  5. dim_region : one row per unique region
 
 # Findings :
- 1. `streams` is displayed as null for 100% of Viral 50 rows . Spotify never published stream counts for that chart , because viral 50 streams are calculated by shares and likes on social media platforms . Hence , not a data quality issue .
+ 1. "streams" is displayed as null for 100% of Viral 50 rows . Spotify never published stream counts for that chart , because viral 50 streams are calculated by shares and likes on social media platforms . Hence , not a data quality issue .
  2. MENA markets (Saudi Arabia, Egypt, Morocco, UAE) show a sharp entry-count drop-off . Spotify didn't launch application in the respective countries until November 2018 .
- 3. Real artist credit strings run up to 788 characters (large ensemble-cast releases), which drove two schema decisions: `nvarchar(max)` on the staging table, and no `UNIQUE` constraint on `dim_artists` (SQL Server's index size limit tops out around 450 characters .
- 4. Each track's real Spotify ID is extracted directly from its chart URL and used as `dim_tracks`' primary key, rather than matching on title text . 
+ 3. Real artist credit strings run up to 788 characters (large ensemble-cast releases), which drove two schema decisions: "nvarchar(max)" on the staging table, and no "UNIQUE" constraint on "dim_artists" (SQL Server's index size limit tops out around 450 characters .
+ 4. Each track's real Spotify ID is extracted directly from its chart URL and used as "dim_tracks" primary key, rather than matching on title text . 
