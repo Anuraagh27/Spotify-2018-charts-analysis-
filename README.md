@@ -1,14 +1,13 @@
 # Spotify-2017/18-charts-analysis
 
-A full analytics pipeline project . Python , SQL , power BI used . Project conducted to analyze Spotify charts data and to monitor hoe music performed during 2017 to 2018 .
+A full analytics pipeline project . Python , SQL used . Project conducted to analyze Spotify charts data and to monitor hoe music performed during 2017 to 2018 .
 
 # Overview 
   Analyses 9 million + real chart entries from Spotify's daily top 200 and viral 50 charts across 66 countries . This project takes a single raw 3.5GB , 26 million rows of CSV file and systematically narrows to down to the 9 million rows for analyzing the 2017 to 2018 music industry performance . Then this single file is taken to SQL and converted into a star schema table for further analysis .
 
 # TECH Stack 
 1. Python (pandas) : cleaning , data understanding , year filtering and ID extraction
-2. SQL server : relational schema and analysis
-3. POWER BI : DATA visualization
+2. SQL server : relational schema and analysis .
 
 # Data sources :
 [Spotify Charts](https://www.kaggle.com/datasets/dhruvildave/spotify-charts) — dhruvildave, Kaggle. Daily Top 200 and Viral 50 charts across 66 regions, Jan 2017–Dec 2021 (filtered here to 2017–2018).
@@ -20,8 +19,7 @@ A full analytics pipeline project . Python , SQL , power BI used . Project condu
   2. Stage 2 : Analysis in SQL
 2.1 staging table -> normalized into star schema 
 2.2 conducting analysis 
-  3. Stage 3 : Visualization ( BI )
-3.1 Data visualization via POWER BI
+
 
 # Schema :
  1. dbo.stg_charts : basic flat data file
